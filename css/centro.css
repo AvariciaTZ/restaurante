@@ -1,0 +1,132 @@
+.container-centro h1{
+  color: #ee0303;
+  text-align: center;
+  padding: 20px;
+  font-family: arial;
+  text-shadow: 0 0 2px white;
+  font-size: 45px;
+  
+}
+.descrip{
+  color: blanchedalmond;
+  font-size: 15px;
+  font-family: arial;
+}
+
+.card-imagen {
+  border-top-left-radius: calc(1.25rem - 1px);
+  border-top-right-radius: calc(1.25rem - 1px);
+}
+
+
+.card-imagen:hover{
+  -webkit-transform:scale(0.9);
+  transform:scale(0.9);
+  overflow:hidden;
+}
+
+
+.card-titulo{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btn-ver{
+  background-color: rgb(0, 0, 0);
+  color:aliceblue;
+  padding: 8px;
+  border-radius: 25px;
+  width: 100%;
+}
+.btn-ver:hover{
+  background-color: #ee4d03;
+}
+
+
+.btn-ver a{
+  color: aliceblue;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.btn-ver a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.social-box {
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  height: 265px;
+  width: 100%;
+  padding: 0 13px;
+}
+
+.social-box-content {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #920303;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  display: flex;
+}
+
+.content-left {
+  width: 30%;
+  background: #fc9801;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #920303;
+    line-height: 38px;
+    padding: 30px 0 18px 37px;
+    font-weight: 200;
+}
+
+ .content-left p{
+  color: #920303;
+  padding-left: 37px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.content-left a {
+  margin-top: 5px;
+  margin-left: 37px;
+}
+
+.img {
+  width: 145px;
+  aspect-ratio: auto 145 / 32;
+  height: 32px;
+}
+
+.content-right{
+  position: relative;
+  width: 70%;
+  padding: 25px 25px 25px 75px;
+}
+
+.content-right img {
+  position: absolute;
+  left: 485px;
+  top: 40px;
+  z-index: 2;
+}
+
+iframe {
+  width: 500px;
+  height: 130px;
+}

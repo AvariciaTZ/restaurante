@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+:root {
+  --subtitulo: #5dd;
+  --x1: rgb(221, 85, 85);
+  --parrafo: rgb(255, 0, 235);
+  --colorYellow: rgb(255, 255, 0);
+  --x3: rgb(0, 255, 85);
+  --nTrans: #0000004d;
+  --nNoTrans: #0000009f;
+  --envoltorio: #f00;
+
+  --Crosa: #ff00aab0;
+  --Nmorado: #500092;
+  --Cmorado: #6f00ff;
+  --Nrojo: rgb(126, 0, 0);
+  --Crojo: #70000079;
+
+  --diagonal: #ff00c893;
+
+  /* x */
+  --diagonal: #00000067;
+  --Nrojo: #002ca5b2;
+  /* x */
+
+  --Ndiagonal: linear-gradient(
+    rgba(0, 56, 211, 0.635) 10%,
+    var(--diagonal) 90%
+  );
+  --diagonal__borde: #001e7079;
+
+  --diagonal__aN: #002ca5b2;
+  --diagonal__aC: rgba(0, 56, 211, 0.635);
+
+  --barraMenuHorizontal: rgb(0, 255, 85);
+  /* li a */
+  --clMenuHorizontal: #ffffff;
+
+  /* --colorMenuHorizontal: #18e9bc; */
+  --colorMenuHorizontal: #e9183b;
+
+  --fondoMenuHorizontal--link: #a3122a;
+  --fondoMenuHorizontal: #e9183b;
+}
+
+body {
+  background: #000000;
+}
+.container__carta,
+.carta,
+.stage,
+.ring,
+.img {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+.container__carta,
+.carta,
+.stage {
+  overflow: hidden;
+  background: url(/img/img__background/background11-hover.png) no-repeat;
+  background-color: rgb(0, 0, 0, 1);
+  background-size: cover;
+  background-position: cover;
+}
+
+.stage,
+.container,
+.ring,
+.img,
+svg {
+  position: absolute;
+}
+
+.container {
+  /* size categorias de la carta */
+  perspective: 2000px;
+  width: 300px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container__carta {
+  /* size fondo  */
+  width: 100%;
+  height: 100vh;
+}
+
+/* letra de las categorias */
+
+.img .container__categoria-texto {
+  opacity: 0;
+}
+.img:hover .container__categoria-texto {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: #00000065;
+}
+.container__categoria-a {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+}
+.img:hover {
+  filter: contrast(1.2);
+}
+.categoria-texto {
+  color: #fff;
+  font-size: 20px;
+}
+.categoria-texto h2 {
+  font-weight: bold;
+  color: var(--x3);
+  font-size: 30px;
+}
+.categoria-texto p {
+  font-style: italic;
+}
+/* logo size */
+.menuHorizontal__logo img {
+  width: 3em;
+  height: 3em;
+}

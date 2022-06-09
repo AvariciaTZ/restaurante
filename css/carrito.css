@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: 12px;
+  text-decoration: none;
+}
+:root {
+  --fondoNegro: rgb(0, 0, 0);
+}
+body {
+  background: url(/img/img__background/background12.jpg) center;
+  background-size: cover;
+}
+header,
+.alert {
+  z-index: 100;
+}
+.description {
+  height: 25px;
+  overflow: hidden;
+  transition: height 0.3s ease-in 0.3s;
+}
+.description:hover {
+  height: 80px;
+}
+.carrito {
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos {
+  display: flex;
+}
+.table__productos > img {
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide,
+.remove {
+  display: none;
+}
+.nav-link {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+.text-danger {
+  color: rgb(255, 255, 255) !important;
+  text-align: center;
+  height: auto;
+  background: #0d6dfdb9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container__MProdCont {
+  position: relative;
+  top: 100px;
+}
+.btnCant {
+  display: block;
+  width: 70px;
+  height: 10px;
+  background: rgb(0, 240, 100);
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+}

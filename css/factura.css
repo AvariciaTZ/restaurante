@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+:root {
+  --subtitulo: #5dd;
+  --x1: rgb(221, 85, 85);
+  --parrafo: rgb(255, 0, 235);
+  --colorYellow: rgb(255, 255, 0);
+  --x3: rgb(0, 255, 85);
+  --nTrans: #0000004d;
+  --nNoTrans: #0000009f;
+  --envoltorio: #f00;
+
+  --Crosa: #e9183b;
+}
+.factura img {
+  width: auto;
+  height: 100px;
+}
+.verUsuarioReg {
+  background: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+.printFactura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  width: 100%;
+  /*  background: rgb(226, 0, 0); */
+}
+.printFacturaPrint {
+  /*  background: rgb(10, 221, 168); */
+}
+h1,
+h2,
+h3 {
+  font-family: Arial;
+}
+.sectionPack {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+}
+.sectionPack.restaurante,
+.sectionPack.cliente {
+  display: flex;
+  align-items: center;
+  /*  justify-content: space-evenly; */
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.sectionPack.restaurante:last-child {
+  justify-content: flex-end;
+}
+
+.sectionPack.restaurante .box {
+  /*  background: green; */
+  width: 300px;
+  padding: 1%;
+  height: auto;
+}
+.sectionPack.restaurante .box h2 {
+  font-size: 20px;
+}
+.capRestaurante h2,
+.cabProductos th h2,
+.cabRestaurante h1,
+.msgCompra h2,
+label h5 {
+  font-weight: bold;
+}
+.capRestaurante h2,
+.cabProductos th h2,
+.cabRestaurante h1,
+.msgCompra h2 {
+  font-size: 20px;
+}
+.cabRestaurante h1,
+.msgCompra {
+  font-size: 25px;
+  text-align: center;
+}
+.contProductos {
+  padding: 10px;
+}
+
+.boxCliente {
+  padding: 1%;
+  width: 300px;
+  width: 100%;
+}
+.boxCliente input {
+  text-align: center;
+  font-size: 12px;
+}
+/* para ocultar margenes del input */
+.boxCliente label input {
+  border: 0;
+  background-color: transparent;
+}
+/* factura confimado */
+.msgCompraFinalizada {
+  /* background: #f00; */
+  text-align: center;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.msgCompraFinalizada h1 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.msgCompraFinalizada p {
+  font-size: 20px;
+  color: #fff;
+}
+.detProductos h2 {
+  font-size: 15px;
+}

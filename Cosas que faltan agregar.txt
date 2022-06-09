@@ -1,0 +1,54 @@
+
+1- Falta redireccionar el diseño del mensaje al comprar productos |x|
+2- Habilitar los input para tomar datos y no solo mirarlos |x|
+3- SM total. Pasar el dato 'echo $pagoTotal;'  |x|
+4- Por cada cambio, se cambia la contraseña tambien |x|
+5- On or Off the Register Product Car |x|
+6- Pago total -> FACTURA: Hacer que al hacer click, te manda alerta que has comprado y luego te manda los datos a una factura pdf |X|
+
+
+User: admin@gmail.com-admin
+User: maria@-maria@
+user: valeria@gmail.com-valeria@
+
+Tema:
+Sistema web para el proceso de ventas del restaurante D’Lucas
+Modulos-Casos de uso:
+Registrar usuario - cliente
+Ingresar usuario -  cliente
+
+Agregar nuevos productos - admin
+
+Mostrar productos(CRUD productos) - admin - cliente[a medias]
+Mantener stock(alerta productos con poco stock) - admin [falta]
+
+tipo de pago - paypal - admin - cliente
+compra de productos(seleciona productos a comprar) - admin - cliente
+
+registar pagos/compra (registrar pagos de paypal) - admin - cliente
+Realizar consultas e informes( factura de pedidos ) - admin - cliente
+
+
+FALTA:
+RODRIGO:USUARIOS{admin-cliente}
+-   Validaciones de formulario registrar y login.
+-   Mejorar el crud de usuarios y añadirle un (FILTRO)-(CRUD de filtrado por rango)
+
+DAVID:carrito-pedidos del usuario {cliente-admin}-[factura y rellenar datos en las tablas]
+-   PASAR DE JS A PHP(producto-carrito) |1||X|
+DESPUES DE PASAR JS A PHP,HACER ESTOS 2{
+-   rellenar datos en tabla detalle_compra (datos del pedido del cliente) , tabla enc_boleta y det_boleta|2||X|
+-   Factura : que lleve a otra pagina donde este ordenado los datos y productos del pedido del cliente. |2||X|
+}
+
+DANILO
+-   reducir todas las tablas y que quede solo 'producto' [tipo_categoria] 
+-   CRUD de la tabla producto CON(FILTRO) 
+
+GUILLERMO
+-   mostrar crud de la tabla 'compra' (FILTRO)
+
+
+
+
+

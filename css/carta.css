@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: 12px;
+  text-decoration: none;
+}
+:root {
+  --fondoMenuHorizontal: #e9183b;
+  --fondoBlanco: #fff;
+  --fondoNegro: rgb(0, 0, 0);
+
+  --fondoMenuHorizontal: rgb(0, 0, 0);
+  --colorPro: #e9183b;
+  --fondoMenuHorizontal-hover: #e9183b;
+  --fondoBlanco: #ffffff;
+  --fondoNegro: rgb(0, 0, 0);
+}
+.container__carta-productos {
+  width: 100%;
+  height: 100vh;
+  /*   background: url(/img/img__background/background10.jpg) center;
+  background-size: cover; */
+  padding: 100px 10%;
+  position: relative;
+  /* poner como variable por cada abierto, se añade 100vh
+  height: calc(100vh + 100vh );
+  */
+  /*   height: calc(100vh + 100vh ); */
+}
+
+.carta-productos {
+  /* contenedor de las categorias de productos */
+  width: 100%;
+  height: 65rem;
+  height: 60rem;
+  position: relative;
+  overflow: auto;
+
+  /* background: #ff0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__option {
+  width: 100%;
+  height: 5rem;
+
+  /* width: 80%; */
+  height: auto;
+
+  background: var(--fondoBlanco);
+  border-radius: 20px;
+  border: 1px solid var(--fondoMenuHorizontal);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.btnNameProducto {
+  width: 97%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  border: 0px;
+  border-radius: 10px;
+}
+.btnNameProducto h2 {
+  font-size: 20px;
+  color: var(--fondoNegro);
+}
+
+.container__productos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1em;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  /* Cerrar la categoria del producto
+  display: none; */
+}
+
+.container__productos.show {
+  /* display: flex; */
+}
+
+.container__productos .productos {
+  padding: 1rem;
+  /*  border: 1px solid #000; */
+  background: var(--fondoBlanco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  max-width: 400px;
+  min-width: 200px;
+  /*   width: 300px;  */
+  width: auto;
+  /* celular
+   max-width:300px ;
+  width: 150px;   
+  */
+  max-height: 300px;
+  height: auto;
+}
+
+.img__productos {
+  background-size: cover;
+  background-position: center;
+  width: 15rem;
+  height: 17rem !important;
+
+  position: relative;
+
+  display: grid;
+  place-items: center;
+}
+
+.container__productos .productos .img__productos p {
+  opacity: 0;
+  display: none;
+}
+.container__productos .productos .img__productos:hover p {
+  position: absolute;
+  text-align: justify;
+  width: 14rem;
+  height: 15rem;
+  color: var(--fondoBlanco);
+  background-color: #0000004d;
+
+  display: inline;
+  opacity: 1;
+  overflow: auto;
+}
+
+.container__productos .productos .img__productos--subtitulo,
+.img__productos--precio {
+  color: var(--fondoNegro);
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.img__productos--precio {
+  width: 200px;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 50px;
+  text-align: center;
+  background: var(--fondoMenuHorizontal);
+  color: var(--fondoBlanco);
+  user-select: none;
+}
+.img__productos--precio h2 {
+  font-size: 15px !important;
+}
+
+.img__productos--precio:hover {
+  background: var(--fondoMenuHorizontal-hover);
+  cursor: pointer;
+  color: var(--fondoBlanco);
+}
+/*  */
+/*  */
+/*  */
+.container__optionsProdCarrito {
+  margin: 100px 10px;
+}
+
+.container__carta-productos.ShowCarta {
+  display: inherit;
+}
+.carrito.ShowCarrito {
+  display: inherit;
+}
+/* acomodar logo excepción*/
+
+.menuHorizontal__logo {
+  transform: rotate(90deg) translateX(-20px);
+}
+
+/* acomodar logo excepción*/
+/* anunciado producto*/
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.colorPro {
+  background: var(--colorPro) !important;
+  color: #fff !important;
+}
+/* paypal */
+.pagoPaypalFac {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: none;
+}
+
+.pagoPaypalFac.seePay {
+  display: block;
+  opacity: 1;
+}
+/*  */
+.activeRegProCarPay.showProCarPay {
+  display: block;
+}
+
+.activeRegProCarPay,
+.showProCarPay.showProCarNot {
+  display: none;
+}

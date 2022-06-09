@@ -1,0 +1,50 @@
+.page-buttons {
+  margin: 60px 0 0;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+:root {
+  --nNoTrans: #0000009f;
+  --colorPro: #e9183b;
+}
+.buttons-group {
+  list-style: none;
+  /*  position: fixed; */
+  z-index: 4;
+  top: 225px;
+  right: 115px;
+  left: 115px;
+  margin: 0;
+  padding: 5px 0;
+  border: 2px solid var(--colorPro);
+  box-shadow: 0 3px 5px var(--colorPro);
+  border-radius: 15px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  background-color: var(--nNoTrans);
+  transition: all 0.2s ease-in-out;
+}
+
+.list-categorias {
+  margin: 0 10px;
+  padding: 15px;
+}
+
+.item-active {
+  background: var(--nNoTrans);
+  border-radius: 20px;
+  border: 3px solid var(--colorPro);
+  padding: 15px;
+}
+
+.item-active a {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.item-active a:hover {
+  color: brown;
+}

@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+:root {
+  --subtitulo: #5dd;
+  --x1: rgb(221, 85, 85);
+  --parrafo: rgb(255, 0, 235);
+  --colorYellow: rgb(255, 255, 0);
+  --x3: rgb(0, 255, 85);
+  --nTrans: #0000004d;
+  --nNoTrans: #0000009f;
+  --envoltorio: #f00;
+
+  --Crosa: #ff00aab0;
+  --Nmorado: #500092;
+  --Cmorado: #6f00ff;
+  --Nrojo: rgb(126, 0, 0);
+  --Crojo: #70000079;
+
+  --diagonal: #ff00c893;
+
+  /* x */
+  --diagonal: #00000067;
+  --Nrojo: #002ca5b2;
+  /* x */
+
+  --Ndiagonal: linear-gradient(
+    rgba(0, 56, 211, 0.635) 10%,
+    var(--diagonal) 90%
+  );
+  --diagonal__borde: #001e7079;
+
+  --diagonal__aN: #002ca5b2;
+  --diagonal__aC: rgba(0, 56, 211, 0.635);
+
+  --barraMenuHorizontal: rgb(0, 255, 85);
+  /* li a */
+  --clMenuHorizontal: #ffffff;
+  --fondoMenuHorizontal: #e9183b;
+
+  /* --colorMenuHorizontal: #18e9bc; */
+  --colorMenuHorizontal: #e9183b;
+
+  --fondoMenuHorizontal--link: #a3122a;
+}
+
+.menuHorizontal {
+  height: 75px;
+  width: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*  background: linear-gradient(45deg, #3b045f, 40%, #5dd, 10%, transparent); */
+  background: linear-gradient(45deg, #000, 27%, #5dd, 10%, transparent);
+  background-color: var(--colorMenuHorizontal);
+  background-color: #000000b9;
+
+  border-radius: 5px;
+  /*  box-shadow: 0 0 10px var(--colorMenuHorizontal),
+    0 0px 40px var(--colorMenuHorizontal);
+ */
+  position: fixed;
+  /*  position: relative; */
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+/* .menuHorizontal__logo {
+  filter: contrast(10);
+}
+.menuHorizontal__logo img {
+  width: 6em;
+  height: 6em;
+  animation: logoAnimaton infinite 3s ease-in-out;
+}
+@keyframes logoAnimaton {
+  0%,
+  100% {
+    filter: brightness(1) blur(5px);
+  }
+  50% {
+    filter: brightness(1.5) blur(8px);
+  }
+} */
+
+.menuHorizontal__items {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+.menuHorizontal__items li {
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.menuHorizontal__items li a {
+  padding: 7px 13px;
+  display: block;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+
+  min-width: 120px;
+  text-decoration: none;
+}
+
+.menuHorizontal__items li:hover,
+li.active {
+  background: var(--fondoMenuHorizontal--link);
+  transition: 0.3s;
+}
+/*  */
+.btnMenu {
+  margin-left: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+.btnMenu__line {
+  width: 50px;
+  height: 7px;
+  transition: all 0.5s;
+  background: rgb(255, 255, 255);
+}
+
+ul.show {
+  top: 65px;
+}
+#btnMenu__line.show:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+}
+
+#btnMenu__line.show:nth-child(2) {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+#btnMenu__line.show:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+}
+/* diseño logo de NAV*/
+.menuHorizontal__logo {
+  font-size: 18px;
+  padding-left: 35px;
+  min-width: 180px;
+  transform: rotate(90deg) translateX(20px);
+}
+
+/* size Logo */
+.menuHorizontal__logo img {
+  width: 5em;
+  height: 5em;
+}
+.menuHorizontal__items .menuHorizontal__items2 {
+  display: none;
+}
+/* extra links */
+
+.menuHorizontal__items li:hover .menuHorizontal__items2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.menuHorizontal__items li .menuHorizontal__items2 .menuHorizontal__items--li a {
+  color: rgb(255, 255, 255);
+  background: var(--fondoMenuHorizontal);
+  height: 100%;
+  border-radius: 5px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.menuHorizontal__items
+  li
+  .menuHorizontal__items2
+  .menuHorizontal__items--li:hover
+  a,
+li.active {
+  background: var(--fondoMenuHorizontal--link);
+}
+/* tamaño del banner publicitario */
+/* .publicidad {
+  padding: 0 30em;
+  background: rgba(0, 0, 0, 0.7);
+} */ /* 
+.carousel-item {
+  height: 100vh;
+} 
+.carousel-item img {
+  background: top no-repeat;
+  background-size: cover;
+  height: 1080px;
+  max-width: 1920px;
+}*/
+.carousel-item img {
+  background: top no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* extra links */
+/* adaptar */
+
+@media screen and (max-width: 952px) {
+  .menuHorizontal__logo {
+    font-size: 17px;
+    padding-left: 35px;
+  }
+  .menuHorizontal__items li a {
+    font-size: 14px;
+  }
+  /* tamaño del banner publicitario */
+  .carousel-item img {
+    /*    background: cover no-repeat; */
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .menuHorizontal {
+    height: 65px;
+  }
+  .btnMenu {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menuHorizontal__items {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #414141;
+
+    background: url(/img/Captura.PNG);
+    background: #41414163;
+
+    top: -100vh;
+    z-index: 5;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+  }
+  .menuHorizontal__items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+
+    display: grid;
+    place-items: center;
+  }
+  .menuHorizontal__items li:hover {
+    background: none;
+  }
+  .menuHorizontal__items li a {
+    font-size: 20px;
+    background: rgb(190, 150, 62);
+    font-weight: bold;
+
+    width: 50%;
+    position: relative;
+    box-shadow: 5px 0 110px rgba(0, 0, 0, 0.6), 5px 0 10px rgba(0, 0, 0, 0.6),
+      5px 0 10px rgba(0, 0, 0, 0.6), 5px 0 10px rgba(0, 0, 0, 0.6);
+  }
+  .menuHorizontal__items li a::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0;
+    z-index: -1;
+    width: 260px;
+    height: 80px;
+    background: transparent;
+    border-right: 10px solid rgb(190, 150, 62);
+    border-left: 10px solid rgb(190, 150, 62);
+  }
+  .menuHorizontal__items li a:hover {
+    color: var(--clMenuHorizontal);
+    background: var(--fondoMenuHorizontal);
+    animation: move1 infinite ease-in-out 1s;
+  }
+  .menuHorizontal__items li a:hover:before {
+    border-right: 10px solid var(--fondoMenuHorizontal);
+    border-left: 10px solid var(--fondoMenuHorizontal);
+    animation: move2 infinite ease-in-out 1s;
+  }
+  @keyframes move1 {
+    0%,
+    100% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+  @keyframes move2 {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(5deg) translateY(15px);
+    }
+    60% {
+      transform: rotate(0deg) translateY(0px);
+    }
+    80% {
+      transform: rotate(-5deg) translateY(15px);
+    }
+  }
+  .menuHorizontal__logo {
+    font-size: 20px;
+    padding-right: 35px;
+  }
+  /* si */
+  /* .menuHorizontal__items li:hover .menuHorizontal__items2 {
+    inset: 0;
+  } */
+
+  /*  PONER LOS ENLACES PARA CELULAR EN FORMA DE PAGINA*/
+
+  /* tamaño del banner publicitario */
+  .carousel-item img {
+    /*    background: cover no-repeat; */
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menuHorizontal__items li a::before {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 858px) and (orientation: landscape) {
+  .menuHorizontal__items li {
+    margin: 5px 0 0 0;
+  }
+  .menuHorizontal__items {
+    overflow: scroll;
+    height: calc(100% - 65px);
+  }
+} /* 
+
+.active img {
+  width: 100%;
+}
+ */
+#btnMenu__line:nth-child(1) {
+  background: var(--colorMenuHorizontal);
+}
+
+#btnMenu__line:nth-child(2) {
+  background: #7847a9;
+}
+
+#btnMenu__line:nth-child(3) {
+  background: #fff;
+}

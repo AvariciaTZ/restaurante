@@ -1,0 +1,30 @@
+.container_registroProductos {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registroProductos {
+  /*  width: 430px;  cel*/
+  /* width: 800px; */
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.btnRegistroProductos h2 {
+  font-size: 20px;
+}
+.registroProductos .inputProd,
+.registroProductos .inputCant {
+  height: 40px;
+}
+
+.activeRegProCar.showProCar {
+  display: block;
+}
+.activeRegProCar,
+.activeRegProCar.showProCarNot {
+  display: none;
+}

@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+:root {
+  --subtitulo: #5dd;
+  --x1: rgb(221, 85, 85);
+  --parrafo: rgb(255, 0, 235);
+  --colorYellow: rgb(255, 255, 0);
+  --x3: rgb(0, 255, 85);
+  --nTrans: #0000004d;
+  --nNoTrans: #0000009f;
+  --envoltorio: #f00;
+
+  --Crosa: #ff00aab0;
+  --Nmorado: #500092;
+  --Cmorado: #6f00ff;
+  --Nrojo: rgb(126, 0, 0);
+  --Crojo: #70000079;
+
+  --diagonal: #ff00c893;
+
+  /* x */
+  --diagonal: #00000067;
+  --Nrojo: #002ca5b2;
+  /* x */
+
+  --Ndiagonal: linear-gradient(
+    rgba(0, 56, 211, 0.635) 10%,
+    var(--diagonal) 90%
+  );
+  --diagonal__borde: #001e7079;
+
+  --diagonal__aN: #002ca5b2;
+  --diagonal__aC: rgba(0, 56, 211, 0.635);
+
+  --barraMenuHorizontal: rgb(0, 255, 85);
+  /* li a */
+  --clMenuHorizontal: #ffffff;
+  --fondoMenuHorizontal: #e9183b;
+
+  /* --colorMenuHorizontal: #18e9bc; */
+
+  --fondoMenuHorizontal--link: #a3122a;
+  /* 12345 */
+  --botonFormulario: rgb(0, 93, 146);
+  --colorMenuHorizontal: #e9183b;
+  --colorLetters: #35b729;
+}
+
+.container__iniciarsesion {
+  width: 100%;
+  height: 100vh;
+  background: url(/img/img__background/background13.jpg) no-repeat center;
+  background-size: 150%;
+}
+
+.container__iniciarsesion::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.iniciarsesion {
+  /*border:1px solid white;*/
+  width: 600px;
+  height: 350px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: inline-flex;  */
+}
+
+.backbox__iniciarsesion {
+  background: #242424;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+
+  transform: translate(0, -50%);
+  top: 50%;
+  display: inline-flex;
+}
+
+.frontbox__iniciarsesion {
+  background: var(--botonFormulario);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  margin-right: 3%;
+  margin-left: 3%;
+  transition: right 0.8s ease-in-out;
+}
+
+.moving {
+  right: 45%;
+}
+.loginMsg,
+.signupMsg {
+  width: 50%;
+  height: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.loginMsg .title,
+.signupMsg .title {
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.loginMsg p,
+.signupMsg p {
+  font-weight: 100;
+}
+.textcontent {
+  color: rgb(255, 255, 255);
+  margin-top: 65px;
+  margin-left: 12%;
+}
+.loginMsg button,
+.signupMsg button {
+  background: var(--colorMenuHorizontal);
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  box-sizing: content-box;
+  font-weight: 300;
+  padding: 10px;
+  margin-top: 20px;
+
+  /* BLOQUEAR BOTON DE REGISTROS 
+  display: none;*/
+}
+
+.login,
+.signup {
+  padding: 20px;
+  text-align: center;
+}
+.login h2,
+.signup h2 {
+  color: var(--colorLetters);
+  font-size: 22px;
+}
+.inputbox {
+  margin-top: 30px;
+}
+.login input,
+.signup input {
+  width: 100%;
+  height: 40px;
+  background: #f2f2f2;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.login button,
+.signup button {
+  background: var(--colorLetters);
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+/* Fade In & Out*/
+.login p {
+  cursor: pointer;
+  color: var(--colorLetters);
+  font-size: 15px;
+}
+
+.loginMsg,
+.signupMsg {
+  /*opacity: 1;*/
+  transition: opacity 0.8s ease-in-out;
+}
+
+.visibility {
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  .container__iniciarsesion {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/img__background/background5.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .iniciarsesion {
+    /*border:1px solid white;*/
+    width: 500px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: inline-flex;  */
+  }
+}
+
+/* REGISTER LOGIN CSS */
+.msgDeErrores {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  /* background: #f0f; */
+}
+.msgDeErrores h3 {
+  color: #fff;
+  /* background: #f0f; */
+}
+.signup {
+  overflow: auto;
+  height: 350px;
+}
